@@ -1,17 +1,7 @@
-<?php
+<?php get_header(); ?>
 
-get_header();
+<section class="hero">
 
-?>
+</section>
 
-<main>
-
-<h1>EntertainmentVerse Home</h1>
-
-<p>Future 3D Homepage</p>
-
-</main>
-
-<?php
-
-get_footer();
+<?php get_footer(); ?>

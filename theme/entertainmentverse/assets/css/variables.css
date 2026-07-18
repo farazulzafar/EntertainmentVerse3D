@@ -1,0 +1,14 @@
+:root{
+    --primary:#0f172a;
+    --secondary:#111827;
+    --accent:#00e5ff;
+    --text:#ffffff;
+    --muted:#9ca3af;
+    --border:rgba(255,255,255,.08);
+
+    --radius:16px;
+
+    --container:1400px;
+
+    --transition:.3s ease;
+}

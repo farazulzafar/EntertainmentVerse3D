@@ -1,6 +1,8 @@
-body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#0b0b0f;
-    color:#ffffff;
-}
+@import url("reset.css");
+@import url("variables.css");
+@import url("typography.css");
+@import url("layout.css");
+@import url("header.css");
+@import url("hero.css");
+@import url("components.css");
+@import url("animations.css");
