@@ -23,7 +23,9 @@
 
 <a href="<?php echo esc_url(home_url('/')); ?>">
 
-EntertainmentVerse
+<span class="logo-icon">EV</span>
+
+<span class="logo-text">EntertainmentVerse</span>
 
 </a>
 
@@ -53,11 +55,15 @@ EntertainmentVerse
 
 <div class="header-actions">
 
-<button>🔍</button>
+<div class="search-box">
 
-<button>🌙</button>
+<input type="text" placeholder="Search movies, anime, games...">
 
-<button>👤</button>
+</div>
+
+<button class="theme-toggle">🌙</button>
+
+<button class="profile-btn">👤</button>
 
 </div>
 
