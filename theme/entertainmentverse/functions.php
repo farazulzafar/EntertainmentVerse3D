@@ -1,6 +1,6 @@
 <?php
 /**
- * Theme Functions
+ * EntertainmentVerse Theme Bootstrap
  *
  * @package EntertainmentVerse
  */
@@ -9,16 +9,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-function entertainmentverse_setup() {
+define( 'EV_THEME_VERSION', '1.0.0' );
+define( 'EV_THEME_PATH', get_template_directory() );
+define( 'EV_THEME_URI', get_template_directory_uri() );
 
-	add_theme_support( 'title-tag' );
+/**
+ * Load Theme Files
+ */
 
-	add_theme_support( 'post-thumbnails' );
-
-	add_theme_support( 'custom-logo' );
-
-	add_theme_support( 'menus' );
-
-}
-
-add_action( 'after_setup_theme', 'entertainmentverse_setup' );
+require_once EV_THEME_PATH . '/inc/setup.php';
+require_once EV_THEME_PATH . '/inc/enqueue.php';
+require_once EV_THEME_PATH . '/inc/menus.php';
+require_once EV_THEME_PATH . '/inc/widgets.php';
