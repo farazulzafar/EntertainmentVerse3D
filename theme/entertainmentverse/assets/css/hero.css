@@ -1,14 +1,16 @@
-.hero{
-
-height:100vh;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-text-align:center;
+..hero{
+    
+    min-height:100vh;
+    
+    background:#05070D;
+    
+    display:flex;
+    
+    align-items:center;
+    
+    justify-content:center;
+    
+    text-align:center;
 
 padding-top:80px;
 

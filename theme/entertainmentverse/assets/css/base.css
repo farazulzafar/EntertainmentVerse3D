@@ -1,0 +1,47 @@
+/* ===========================
+   Lumora Base Styles
+=========================== */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#05070D;
+    color:#ffffff;
+    font-family:Inter, Arial, sans-serif;
+    overflow-x:hidden;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+ul{
+    list-style:none;
+}
+
+button{
+    cursor:pointer;
+    border:none;
+    background:none;
+}
+
+input{
+    outline:none;
+}

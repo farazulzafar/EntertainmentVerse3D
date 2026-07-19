@@ -1,10 +1,9 @@
-<footer>
+<footer class="site-footer">
 
-<p>© <?php echo date('Y'); ?> EntertainmentVerse</p>
+    <p><strong>Lumora</strong></p>
+
+    <p>Entertainment Reimagined</p>
+
+    <p>© 2026 Lumora</p>
 
 </footer>
-
-<?php wp_footer(); ?>
-
-</body>
-</html>

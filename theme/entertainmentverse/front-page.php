@@ -2,29 +2,25 @@
 
 <section class="hero">
 
-<div class="hero-content">
+    <div class="hero-content">
 
-<h1>
+        <h1>
+            <span>Lumora</span>
+        </h1>
 
-Welcome To
+        <p class="hero-tagline">
+            Entertainment Reimagined
+        </p>
 
-<span>EntertainmentVerse</span>
+        <p>
+            Movies • TV Shows • Anime • Gaming • Music
+        </p>
 
-</h1>
+        <a href="#" class="hero-button">
+            Explore Now
+        </a>
 
-<p>
-
-Movies • TV Shows • Anime • Gaming • Music
-
-</p>
-
-<a href="#" class="hero-button">
-
-Explore Now
-
-</a>
-
-</div>
+    </div>
 
 </section>
 

@@ -1,7 +1,12 @@
 .container{
 
-width:min(1400px,92%);
+    width:min(1400px,92%);
+    margin:auto;
 
-margin:auto;
+}
+
+.section{
+
+    padding:100px 0;
 
 }

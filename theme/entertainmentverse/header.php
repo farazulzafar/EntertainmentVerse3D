@@ -25,7 +25,7 @@
 
 <span class="logo-icon">EV</span>
 
-<span class="logo-text">EntertainmentVerse</span>
+<span class="logo-text">Lumora</span>
 
 </a>
 
