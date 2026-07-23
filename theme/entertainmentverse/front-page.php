@@ -1,27 +1,25 @@
 <?php get_header(); ?>
 
-<section class="hero">
+<main class="site-main">
 
-    <div class="hero-content">
+    <?php get_template_part('template-parts/hero'); ?>
 
-        <h1>
-            <span>Lumora</span>
-        </h1>
+    <?php get_template_part('template-parts/featured'); ?>
 
-        <p class="hero-tagline">
-            Entertainment Reimagined
-        </p>
+    <?php get_template_part('template-parts/trending'); ?>
 
-        <p>
-            Movies • TV Shows • Anime • Gaming • Music
-        </p>
+    <?php get_template_part('template-parts/movies'); ?>
 
-        <a href="#" class="hero-button">
-            Explore Now
-        </a>
+    <?php get_template_part('template-parts/tvshows'); ?>
 
-    </div>
+    <?php get_template_part('template-parts/anime'); ?>
 
-</section>
+    <?php get_template_part('template-parts/games'); ?>
+
+    <?php get_template_part('template-parts/music'); ?>
+
+    <?php get_template_part('template-parts/news'); ?>
+
+</main>
 
 <?php get_footer(); ?>

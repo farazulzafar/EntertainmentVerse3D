@@ -2,13 +2,9 @@
 <html <?php language_attributes(); ?>>
 
 <head>
-
 <meta charset="<?php bloginfo('charset'); ?>">
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <?php wp_head(); ?>
-
 </head>
 
 <body <?php body_class(); ?>>
@@ -17,56 +13,38 @@
 
 <header class="site-header">
 
-<div class="container">
+    <div class="container">
 
-<div class="logo">
+        <div class="logo">
+            <a href="<?php echo esc_url(home_url('/')); ?>">
+                <span class="logo-icon">L</span>
+                <span class="logo-text">Lumora</span>
+            </a>
+        </div>
 
-<a href="<?php echo esc_url(home_url('/')); ?>">
+        <nav class="main-nav">
+            <?php
+            wp_nav_menu(array(
+                'theme_location' => 'primary',
+                'container'      => false,
+                'menu_class'     => 'nav-menu',
+                'fallback_cb'    => false,
+            ));
+            ?>
+        </nav>
 
-<span class="logo-icon">EV</span>
+        <div class="header-actions">
 
-<span class="logo-text">Lumora</span>
+            <div class="search-box">
+                <input type="text" placeholder="Search Movies, TV, Anime...">
+            </div>
 
-</a>
+            <button class="theme-toggle">🌙</button>
 
-</div>
+            <button class="profile-btn">👤</button>
 
-<nav class="main-nav">
+        </div>
 
-<ul>
-
-<li><a href="#">Home</a></li>
-
-<li><a href="#">Movies</a></li>
-
-<li><a href="#">TV Shows</a></li>
-
-<li><a href="#">Anime</a></li>
-
-<li><a href="#">Games</a></li>
-
-<li><a href="#">Music</a></li>
-
-<li><a href="#">News</a></li>
-
-</ul>
-
-</nav>
-
-<div class="header-actions">
-
-<div class="search-box">
-
-<input type="text" placeholder="Search movies, anime, games...">
-
-</div>
-
-<button class="theme-toggle">🌙</button>
-
-<button class="profile-btn">👤</button>
-
-</div>
-
-</div>
+    </div>
 
 </header>

@@ -1,0 +1,117 @@
+/* ===================================
+   Content Cards
+=================================== */
+
+.card-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.content-card{
+
+    background:#0d1118;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:all .35s ease;
+
+    cursor:pointer;
+
+    border:1px solid rgba(255,255,255,.06);
+
+}
+
+.content-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 25px 60px rgba(0,0,0,.45);
+
+}
+
+.card-image{
+
+    aspect-ratio:2/3;
+
+    background:linear-gradient(
+        135deg,
+        #1d2430,
+        #0d1118
+    );
+
+    position:relative;
+
+}
+
+.card-image::after{
+
+    content:"▶";
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(0,229,255,.15);
+
+    color:#00e5ff;
+
+    font-size:28px;
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+.content-card:hover .card-image::after{
+
+    opacity:1;
+
+}
+
+.card-body{
+
+    padding:22px;
+
+}
+
+.card-title{
+
+    color:#fff;
+
+    font-size:22px;
+
+    margin-bottom:10px;
+
+}
+
+.card-meta{
+
+    color:#9ca3af;
+
+    font-size:15px;
+
+}

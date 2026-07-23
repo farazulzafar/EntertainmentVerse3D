@@ -1,12 +1,58 @@
+/* ===================================
+   Lumora Layout System
+=================================== */
+
 .container{
-
-    width:min(1400px,92%);
-    margin:auto;
-
+    width:100%;
+    max-width:1400px;
+    margin:0 auto;
+    padding:0 24px;
 }
 
 .section{
-
     padding:100px 0;
+}
+
+.site-main{
+    min-height:calc(100vh - 160px);
+}
+
+/* Large Desktop */
+@media (max-width:1400px){
+
+    .container{
+        max-width:1200px;
+    }
+
+}
+
+/* Laptop */
+@media (max-width:1200px){
+
+    .container{
+        padding:0 20px;
+    }
+
+}
+
+/* Tablet */
+@media (max-width:992px){
+
+    .container{
+        padding:0 18px;
+    }
+
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+    .container{
+        padding:0 16px;
+    }
+
+    .section{
+        padding:70px 0;
+    }
 
 }

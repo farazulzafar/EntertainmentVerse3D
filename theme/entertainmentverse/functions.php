@@ -1,23 +1,48 @@
 <?php
-/**
- * EntertainmentVerse Theme Bootstrap
- *
- * @package EntertainmentVerse
- */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
+/* ==========================================
+   Lumora Theme Setup
+========================================== */
+
+function lumora_theme_setup() {
+
+    add_theme_support('title-tag');
+
+    add_theme_support('post-thumbnails');
+
+    add_theme_support('custom-logo');
+
+    add_theme_support('menus');
+
+    register_nav_menus(array(
+
+        'primary' => __('Primary Menu', 'lumora'),
+
+    ));
+
 }
 
-define( 'EV_THEME_VERSION', '1.0.0' );
-define( 'EV_THEME_PATH', get_template_directory() );
-define( 'EV_THEME_URI', get_template_directory_uri() );
+add_action('after_setup_theme', 'lumora_theme_setup');
 
-/**
- * Load Theme Files
- */
 
-require_once EV_THEME_PATH . '/inc/setup.php';
-require_once EV_THEME_PATH . '/inc/enqueue.php';
-require_once EV_THEME_PATH . '/inc/menus.php';
-require_once EV_THEME_PATH . '/inc/widgets.php';
+/* ==========================================
+   Load Theme Assets
+========================================== */
+
+function lumora_enqueue_assets() {
+
+    wp_enqueue_style(
+
+        'lumora-main',
+
+        get_template_directory_uri() . '/assets/css/main.css',
+
+        array(),
+
+        '1.0.0'
+
+    );
+
+}
+
+add_action('wp_enqueue_scripts', 'lumora_enqueue_assets');
