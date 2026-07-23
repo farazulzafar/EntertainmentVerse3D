@@ -3,19 +3,19 @@
 =================================== */
 
 .section{
-    padding:100px 0;
+    padding:90px 0;
 }
 
 .section-title{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    margin-bottom:40px;
+    margin-bottom:35px;
 }
 
 .section-title h2{
-    font-size:40px;
-    color:#ffffff;
+    color:#fff;
+    font-size:38px;
     margin:0;
 }
 
@@ -23,4 +23,9 @@
     color:#00e5ff;
     text-decoration:none;
     font-weight:600;
+    transition:.3s;
+}
+
+.section-title a:hover{
+    color:#fff;
 }

@@ -1,18 +1,17 @@
 <?php
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
+if (!defined('ABSPATH')) {
+    exit;
 }
 
-function entertainmentverse_register_menus() {
+function lumora_register_menus() {
 
-	register_nav_menus(
-		array(
-			'primary' => 'Primary Menu',
-			'footer'  => 'Footer Menu',
-		)
-	);
+    register_nav_menus(array(
+
+        'primary' => __('Primary Menu', 'lumora'),
+
+    ));
 
 }
 
-add_action( 'after_setup_theme', 'entertainmentverse_register_menus' );
+add_action('after_setup_theme', 'lumora_register_menus');

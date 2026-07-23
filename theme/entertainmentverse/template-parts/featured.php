@@ -12,27 +12,51 @@
 
         <div class="card-grid">
 
-            <?php for($i=1; $i<=4; $i++) : ?>
+            <?php
 
-            <article class="content-card">
+            $movies = [
 
-                <div class="card-image"></div>
+                [
+                    'image'  => 'poster-1.jpg',
+                    'title'  => 'The Dark Horizon',
+                    'rating' => '9.2',
+                    'meta'   => 'Sci-Fi • 2026'
+                ],
 
-                <div class="card-body">
+                [
+                    'image'  => 'poster-2.jpg',
+                    'title'  => 'Shadow Hunter',
+                    'rating' => '8.9',
+                    'meta'   => 'Action • 2026'
+                ],
 
-                    <h3 class="card-title">
-                        Featured Movie <?php echo $i; ?>
-                    </h3>
+                [
+                    'image'  => 'poster-3.jpg',
+                    'title'  => 'Lost Empire',
+                    'rating' => '8.7',
+                    'meta'   => 'Adventure • 2026'
+                ],
 
-                    <p class="card-meta">
-                        ⭐ 8.9 • Action • 2026
-                    </p>
+                [
+                    'image'  => 'poster-4.jpg',
+                    'title'  => 'Infinity War Reborn',
+                    'rating' => '9.4',
+                    'meta'   => 'Fantasy • 2026'
+                ]
 
-                </div>
+            ];
 
-            </article>
+            foreach ($movies as $movie) {
 
-            <?php endfor; ?>
+                get_template_part(
+                    'template-parts/components/content-card',
+                    null,
+                    $movie
+                );
+
+            }
+
+            ?>
 
         </div>
 

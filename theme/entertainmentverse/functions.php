@@ -1,48 +1,26 @@
 <?php
 
-/* ==========================================
-   Lumora Theme Setup
-========================================== */
-
-function lumora_theme_setup() {
-
-    add_theme_support('title-tag');
-
-    add_theme_support('post-thumbnails');
-
-    add_theme_support('custom-logo');
-
-    add_theme_support('menus');
-
-    register_nav_menus(array(
-
-        'primary' => __('Primary Menu', 'lumora'),
-
-    ));
-
+if (!defined('ABSPATH')) {
+    exit;
 }
 
-add_action('after_setup_theme', 'lumora_theme_setup');
+/*
+|--------------------------------------------------------------------------
+| Core Files
+|--------------------------------------------------------------------------
+*/
 
+require_once get_template_directory() . '/inc/menus.php';
+require_once get_template_directory() . '/inc/helpers.php';
 
-/* ==========================================
-   Load Theme Assets
-========================================== */
+/*
+|--------------------------------------------------------------------------
+| Classes
+|--------------------------------------------------------------------------
+*/
 
-function lumora_enqueue_assets() {
-
-    wp_enqueue_style(
-
-        'lumora-main',
-
-        get_template_directory_uri() . '/assets/css/main.css',
-
-        array(),
-
-        '1.0.0'
-
-    );
-
-}
-
-add_action('wp_enqueue_scripts', 'lumora_enqueue_assets');
+require_once get_template_directory() . '/classes/class-theme.php';
+require_once get_template_directory() . '/classes/class-assets.php';
+require_once get_template_directory() . '/classes/class-tmdb.php';
+require_once get_template_directory() . '/classes/class-security.php';
+require_once get_template_directory() . '/classes/class-search.php';

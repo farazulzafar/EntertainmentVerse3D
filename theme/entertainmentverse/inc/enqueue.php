@@ -1,29 +1,18 @@
 <?php
-/**
- * Load CSS & JS
- */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
+if (!defined('ABSPATH')) {
+    exit;
 }
 
-function entertainmentverse_enqueue_assets() {
+function lumora_enqueue_assets() {
 
-	wp_enqueue_style(
-		'entertainmentverse-main',
-		EV_THEME_URI . '/assets/css/main.css',
-		array(),
-		EV_THEME_VERSION
-	);
-
-	wp_enqueue_script(
-		'entertainmentverse-main',
-		EV_THEME_URI . '/assets/js/main.js',
-		array(),
-		EV_THEME_VERSION,
-		true
-	);
+    wp_enqueue_style(
+        'lumora-main',
+        get_template_directory_uri() . '/assets/css/main.css',
+        array(),
+        '1.0.1'
+    );
 
 }
 
-add_action( 'wp_enqueue_scripts', 'entertainmentverse_enqueue_assets' );
+add_action('wp_enqueue_scripts', 'lumora_enqueue_assets');
