@@ -1,47 +1,55 @@
-/* ===========================
-   Lumora Base Styles
-=========================== */
-
-*,
-*::before,
-*::after{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
+/* ==========================
+   Default Dark Theme
+========================== */
 
 body{
-    background:#05070D;
+    background:#05070d;
     color:#ffffff;
-    font-family:Inter, Arial, sans-serif;
-    overflow-x:hidden;
-    line-height:1.6;
 }
 
-a{
-    text-decoration:none;
-    color:inherit;
+/* Sab sections dark rahenge */
+
+section{
+    background:#05070d;
 }
 
-img{
-    max-width:100%;
-    display:block;
+/* ==========================
+   Light Theme
+========================== */
+
+body.light-mode{
+    background:#f5f7fb;
+    color:#111;
 }
 
-ul{
-    list-style:none;
+body.light-mode section{
+    background:#f5f7fb;
 }
 
-button{
-    cursor:pointer;
-    border:none;
-    background:none;
+body.light-mode .site-header{
+    background:rgba(255,255,255,.92);
+    border-bottom:1px solid rgba(0,0,0,.08);
 }
 
-input{
-    outline:none;
+body.light-mode .logo-text,
+body.light-mode .main-nav a{
+    color:#111 !important;
+}
+
+body.light-mode .hero{
+    background:#eef2f7;
+}
+
+body.light-mode .hero p{
+    color:#555;
+}
+
+body.light-mode .content-card{
+    background:#ffffff;
+    border:1px solid #ddd;
+}
+
+body.light-mode .site-footer{
+    background:#ffffff;
+    color:#111;
 }

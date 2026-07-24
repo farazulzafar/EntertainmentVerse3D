@@ -14,11 +14,23 @@ class Lumora_Assets {
 
     public function enqueue() {
 
+        /* CSS */
+
         wp_enqueue_style(
             'lumora-main',
             get_template_directory_uri() . '/assets/css/main.css',
             array(),
-            '1.0.2'
+            lumora_version()
+        );
+
+        /* JavaScript */
+
+        wp_enqueue_script(
+            'lumora-main',
+            get_template_directory_uri() . '/assets/js/main.js',
+            array(),
+            lumora_version(),
+            true
         );
 
     }

@@ -6,11 +6,21 @@ if (!defined('ABSPATH')) {
 
 function lumora_enqueue_assets() {
 
+    /* CSS */
     wp_enqueue_style(
         'lumora-main',
         get_template_directory_uri() . '/assets/css/main.css',
         array(),
-        '1.0.1'
+        lumora_version()
+    );
+
+    /* JavaScript */
+    wp_enqueue_script(
+        'lumora-main',
+        get_template_directory_uri() . '/assets/js/main.js',
+        array(),
+        lumora_version(),
+        true
     );
 
 }
